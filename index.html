@@ -18,13 +18,13 @@
       crossorigin="anonymous"
     ></script>
     <!-- css -->
-    <link rel="stylesheet" href="" />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
       <!-- header area start -->
     <header>
         <!-- nav area start -->
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
         <div class="container">
           <a class="navbar-brand" href="#"
             ><img src="images/logo.png" alt=""
@@ -43,33 +43,33 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <a class="nav-link active" aria-current="page" href="#home">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">shoes</a>
+                <a class="nav-link" href="#shoe">shoes</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">backpak</a>
+                <a class="nav-link" href="#backpack">backpack</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">subscribe</a>
+                <a class="nav-link" href="#subscribe">subscribe</a>
               </li>
             </ul>
           </div>
         </div>
       </nav>
       <!-- slider area start -->
-      <section class="slider-section mt-5">
+      <section class="slider-section my-5" id="home">
           <div class="container">
             <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
-                  <div class="carousel-item active" style="background-color: #FCEAE8;">
+                  <div class="carousel-item active panda-bg-info">
                    <div class="row p-5  d-flex align-items-center">
                        <div class="col-lg-7 col-md-8 col-sm-12 col-12 ">
                           <h1>Cool Dude Headphone</h1>
                           <p>This is the best headphone in the world for people who just want to waste time in front of funky world.</p>
                           <h1>$420</h1>
-                          <button class="btn bg-warning">Buy Now</button>
+                          <button class="btn panda-btn">Buy Now</button>
                        </div>
                        <div class="col-lg-5 col-md-4 col-sm-12 col-12">
                            <img src="images/banner-images/headphone.png" alt="" class="img-fluid">
@@ -144,7 +144,7 @@
                 </div>
         </section>
         <!-- shoe area  -->
-        <section class="card-section">
+        <section class="card-section" id="shoe">
           <div class="container">
             <div class="card-area">
               <h2  class="section-title">shoe</h2>
@@ -157,7 +157,7 @@
                       <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                     </div>
                     <div class="m-3">
-                     <button class="btn btn-warning">Buy Now</button>
+                     <button class="btn panda-btn">Buy Now</button>
                     </div>
                   </div>
                 </div>
@@ -169,7 +169,7 @@
                       <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
                     </div>
                     <div class="m-3">
-                      <button class="btn btn-danger">Buy Now</button>
+                      <button class="btn panda-btn">Buy Now</button>
                     </div>
                   </div>
                 </div>
@@ -181,7 +181,7 @@
                       <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
                     </div>
                     <div class="m-3">
-                     <button class="btn btn-info">Buy Now</button>
+                     <button class="btn panda-btn">Buy Now</button>
                     </div>
                   </div>
                 </div>
@@ -190,7 +190,7 @@
           </div>
         </section>
         <!-- beg area  -->
-        <section class="card-section my-5">
+        <section class="card-section my-5" id="backpack">
           <div class="container">
             <div class="card-area">
               <h2  class="section-title">Bag</h2>
@@ -204,7 +204,7 @@
                       <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                     </div>
                     <div class="m-3">
-                     <button class="btn btn-warning">Buy Now</button>
+                     <button class="btn panda-btn">Buy Now</button>
                     </div>
                   </div>
                 </div>
@@ -217,7 +217,7 @@
                       <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
                     </div>
                     <div class="m-3">
-                      <button class="btn btn-danger">Buy Now</button>
+                      <button class="btn panda-btn">Buy Now</button>
                     </div>
                   </div>
                 </div>
@@ -230,7 +230,7 @@
                       <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
                     </div>
                     <div class="m-3">
-                     <button class="btn btn-info">Buy Now</button>
+                     <button class="btn panda-btn">Buy Now</button>
                     </div>
                   </div>
                 </div>
@@ -239,17 +239,17 @@
           </div>
         </section>
         <!-- subrice -->
-        <section class="sub-section">
+        <section class="sub-section" id="subscribe">
           <div class="container">
-            <div class="sub-area bg-info rounded-3  d-flex align-items-center justify-content-center" style="height: 400px;">
+            <div class="sub-area panda-bg-info rounded-3  d-flex align-items-center justify-content-center" style="height: 400px;">
               <div class="row">
                 <div class="col-12">
                   <div class="sub-content-info">
                     <div class="sub-content-inner">
                       <h2>LET'S STAY IN TOUCH</h2>
                     <p>Get updates on sales, specials and more</p>
-                    <input type="email" placeholder="Enter Your Email"><br>
-                    <button class="btn btn-warning">SUBMIT</button>
+                    <input class="form-control" type="email" placeholder="Enter Your Email"><br>
+                    <button class="btn panda-btn">SUBMIT</button>
                     </div>
                   </div>
                 </div>
